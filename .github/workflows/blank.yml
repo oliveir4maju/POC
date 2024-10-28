@@ -43,4 +43,4 @@ jobs:
       run: |
             echo "Conectando no EC2"
             echo "${{secrets.AWS_KEY_POCSEARA}}" > private_key && chmod 600 private_key
-            ssh -o StrictHostKeyChecking=no -i private_key ssh -i "pocseara.pem" ubuntu@ec2-34-207-100-109.compute-1.amazonaws.cm/;git pull;./executar.sh"
+            ssh -o StrictHostKeyChecking=no -i private_key ssh -i "pocseara.pem" ubuntu@ec2-34-207-100-109.compute-1.amazonaws.com/;git pull;./executar.sh"
